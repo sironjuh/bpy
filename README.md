@@ -5,22 +5,6 @@
 
 Available here: [https://www.blendermarket.com/products/pcv](https://www.blendermarket.com/products/pcv)
 
-* 1.1.0
-    * transfer colors from point cloud to mesh vertex colors or uv texture
-    * voxel simplification method
-    * generate points in mesh volume
-
-* 1.0.0
-    * core completely rewritten
-    * takes less system memory
-    * better undo / redo handling
-    * partial ply loading - slice, evenly spaced or random strategies
-    * out of video memory crash prevention with maximum display points user setting
-    * more shader types and shader options (Phong, Billboard, Billboard Phong, Fresnel, Bounding Box, Position with scale and offset)
-    * render to image with any shader
-    * optional faster triangulated conversion to mesh
-    * many small fixes and optimizations
-
 ***
 ***
 
@@ -33,11 +17,6 @@ Available here: [https://www.blendermarket.com/products/pcv](https://www.blender
 * [Import Agisoft PhotoScan Cameras](#import-agisoft-photoscan-cameras)
 * [Carbon Tools](#carbon-tools)
 * [Time Tracker](#time-tracker-for-blender-280)
-
-***
-***
-
-Addons for **blender 2.7x** are here: [2.7x branch](https://github.com/uhlik/bpy/tree/2.7x)
 
 ***
 ***
@@ -506,18 +485,25 @@ changelog:
 * 0.3.0 export implemented in cython
 * 0.2.0 ported to blender 2.80
 
-**requirements:**
+**installation on mac (win/linux should be similar) and blender 2.83.6 assuming you have blender in /Applications/Blender.app:**
 
-* python 3.7.0 (the same as shipped with blender 2.8)
-* Cython (install with pip)
+get pip and install cython using pip
 
-**installation on mac (win/linux should be very similar):**
+<pre>cd /Applications/Blender.app/Contents/Resources/2.83/python/bin/
+./python3.7m -m ensurepip
+./python3.7m -m pip install -U pip
+./pip3 install cython</pre>
 
-1. download repository and copy whole directory `io_mesh_fast_obj` to `/Users/*USERNAME*/Library/Application Support/Blender/2.80/scripts/addons/`
-2. in terminal cd to `/Users/*USERNAME*/Library/Application Support/Blender/2.80/scripts/addons/io_mesh_fast_obj/`
-    1. `$ git clone http://git.blender.org/blender.git`
-    2. `$ python3 setup.py build_ext --inplace`
-3. now delete `blender` directory, it is no longer needed until blender is updated, then you (might) need to repeat the process
+clone blender source
+
+<pre>cd ~/Library/Application Support/Blender/2.83/scripts/addons/io_mesh_fast_obj
+git clone git://git.blender.org/blender.git
+cd blender
+git checkout v2.83.6</pre>
+
+build cython extension
+
+<pre>/Applications/Blender.app/Contents/Resources/2.83/python/bin/python3.7m setup.py build_ext --inplace</pre>
 
 ***
 
