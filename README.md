@@ -1,14 +1,23 @@
-## [Point Cloud Visualizer 1.0+](https://www.blendermarket.com/products/pcv)
+## [Point Cloud Visualizer 2.0+](https://www.blendermarket.com/products/pcv)
 
 ![Point Cloud Visualizer](https://raw.githubusercontent.com/uhlik/bpy/media/pcv-1.0/pcv.png)
 ![PCV](https://raw.githubusercontent.com/uhlik/bpy/media/pcv-1.0/header-600px.gif)
 
+**Supported, maintained and updated to work in latest Blender versions. Many, many more features.**
+
 Available here: [https://www.blendermarket.com/products/pcv](https://www.blendermarket.com/products/pcv)
 
+Full documentation is here: [https://jakubuhlik.com/docs/pcv/docs.html](https://jakubuhlik.com/docs/pcv/docs.html)
+
 ***
 ***
 
-# Addons for blender 2.80
+# **All addons available in this repository are unmaintained and unsupported, some may work in recent Blender versions some may not, some are obsolete.**
+
+***
+***
+
+# Addons for blender 2.80 and 2.81 (maybe up to 2.83)
 
 * [Point Cloud Visualizer](#point-cloud-visualizer-for-blender-280)
 * [Color Management Presets](#color-management-presets-for-blender-280)
@@ -21,11 +30,15 @@ Available here: [https://www.blendermarket.com/products/pcv](https://www.blender
 ***
 ***
 
-## [Point Cloud Visualizer](https://raw.githubusercontent.com/uhlik/bpy/master/space_view3d_point_cloud_visualizer.py) (for blender 2.80)
+## [Point Cloud Visualizer 0.9.x](https://raw.githubusercontent.com/uhlik/bpy/master/space_view3d_point_cloud_visualizer.py) (for blender 2.80)
 
 **Display, edit, filter, render, convert, generate and export colored point cloud PLY files.**
 
 Works with any PLY file with 'x, y, z, nx, ny, nz, red, green, blue' vertex values. Vertex normals and colors are optional.
+
+# This is old, unmaintained and unsupported version
+
+# This version fully works only in **Blender 2.81**
 
 ![Point Cloud Visualizer](https://raw.githubusercontent.com/uhlik/bpy/media/pcv-0.8.9.gif)
 
